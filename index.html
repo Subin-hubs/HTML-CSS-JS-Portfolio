@@ -48,7 +48,7 @@
         <div class="hero-btns">
           <a href="#projects" class="btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
           <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-          
+
         </div>
       </div>
       <div class="hero-right">
@@ -177,10 +177,14 @@
         <h2 class="section-title">Featured Projects</h2>
         <p class="section-sub">Apps I've designed, developed, and shipped — click any card to explore details.</p>
       </div>
+
       <div class="projects-grid">
 
         <div class="project-card p1 reveal" onclick="openProjectModal('fb')">
-          <div class="project-thumb"><span style="position:relative;z-index:1">📘</span></div>
+          <div class="project-thumb">
+            <img src="assets/projects/facebook.jpg" alt="Facebook Clone"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
           <div class="project-body">
             <div class="project-num">01 / Social App</div>
             <div class="project-title">Facebook Clone</div>
@@ -198,7 +202,9 @@
         </div>
 
         <div class="project-card p2 reveal" onclick="openProjectModal('bhansa')">
-          <div class="project-thumb"><span style="position:relative;z-index:1">🍜</span></div>
+          <div class="project-thumb">
+            <img src="assets/projects/betzy.jpg" alt="Bhansa Ghar" style="width:100%; height:100%; object-fit:cover;">
+          </div>
           <div class="project-body">
             <div class="project-num">02 / Utility App</div>
             <div class="project-title">Bhansa Ghar</div>
@@ -215,24 +221,41 @@
         </div>
 
         <div class="project-card p3 reveal" onclick="openProjectModal('aadan')">
-          <div class="project-thumb"><span style="position:relative;z-index:1">📚</span></div>
+          <div class="project-thumb">
+            <img src="assets/projects/aadanpradan.jpg" alt="Aadan Pradan"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
           <div class="project-body">
             <div class="project-num">03 / Code Challenge</div>
             <div class="project-title">Aadan Pradan</div>
-            <div class="project-desc">Built in a single day during a competitive code challenge — a book donation &
-              exchange platform with a Firebase backend.</div>
-            <div class="project-stack"><span class="stack-tag">Flutter</span><span
-                class="stack-tag">Firebase</span><span class="stack-tag">Dart</span></div>
+            <div class="project-desc">
+              Built in a single day during a competitive code challenge — a book donation & exchange platform with a
+              Firebase backend.
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Firebase</span>
+              <span class="stack-tag">Dart</span>
+            </div>
+
             <div class="project-actions">
-              <a href="#" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()"><i class="fab fa-github"></i>
-                GitHub</a>
-              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> Details</span>
+              <a href="#" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <span class="btn-sm btn-sm-ghost">
+                <i class="fas fa-expand"></i> Details
+              </span>
             </div>
           </div>
         </div>
 
         <div class="project-card p4 reveal" onclick="openProjectModal('portfolio')">
-          <div class="project-thumb"><span style="position:relative;z-index:1">🌐</span></div>
+          <div class="project-thumb">
+            <img src="assets/projects/portfolio.jpg" alt="Portfolio Website"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
           <div class="project-body">
             <div class="project-num">04 / Web</div>
             <div class="project-title">Portfolio Website</div>
@@ -313,7 +336,7 @@
         <!-- Flutter cert -->
         <div class="cert-card-new cert-c1 reveal" onclick="openCertModal('flutter')">
           <div class="cert-photo">
-            <img src="assets/Br.jpeg" alt="Flutter Certificate" />
+            <img src="assets/project/Br.jpeg" alt="Flutter Certificate" />
           </div>
           <div class="cert-body-new">
             <div class="cert-num">01 / Mobile Development</div>
@@ -328,17 +351,21 @@
         <!-- Python cert -->
         <div class="cert-card-new cert-c2 reveal" onclick="openCertModal('python')">
           <div class="cert-photo">
-            <!--
-            <img src="certs/python-certificate.jpg" alt="Python Certificate" />
-          -->
-            <span class="cert-emoji">🐍</span>
+
+            <img src="assets/project/python.png" alt="Python Certificate" />
+
+
           </div>
           <div class="cert-body-new">
             <div class="cert-num">02 / Programming</div>
             <div class="cert-title-new">Python (Problem Solving)</div>
             <div class="cert-issuer-new">HackerRank</div>
+
             <div class="cert-actions">
-              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> View Certificate</span>
+              <a href="https://www.hackerrank.com/certificates/iframe/d40bff4cca22" target="_blank"
+                rel="noopener noreferrer" class="btn-sm btn-sm-ghost">
+                <i class="fas fa-expand"></i> View Certificate
+              </a>
             </div>
           </div>
         </div>
@@ -346,10 +373,9 @@
         <!-- Azure cert -->
         <div class="cert-card-new cert-c3 reveal" onclick="openCertModal('azure')">
           <div class="cert-photo">
-            <!--
-            <img src="certs/azure-certificate.jpg" alt="Azure Certificate" />
-          -->
-            <span class="cert-emoji">☁️</span>
+
+            <img src="assets/project/microsoft.png" alt="Azure Certificate" />
+
           </div>
           <div class="cert-body-new">
             <div class="cert-num">03 / AI & Cloud</div>
@@ -402,14 +428,6 @@
             </div>
             <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
           </a>
-          <a href="https://subintamang.vercel.app" target="_blank" class="contact-card">
-            <div class="contact-card-icon" style="background:rgba(74,240,176,.08)">🌐</div>
-            <div>
-              <div class="contact-card-label">Portfolio</div>
-              <div class="contact-card-value">subintamang.vercel.app</div>
-            </div>
-            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
-          </a>
         </div>
         <div class="reveal">
           <div style="background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:36px">
@@ -448,32 +466,78 @@
     </div>
   </footer>
 
+
+
   <script>
     /* PROJECT DATA */
     const projects = {
       fb: {
-        emoji: '📘', bg: 'linear-gradient(135deg,#1877f2,#0d5fba)', title: 'Facebook Clone App',
+        image: 'assets/projects/facebook.jpg',
+        bg: 'linear-gradient(135deg,#4af080,#2db860)',
+        title: 'Facebook Clone App',
         desc: 'A full-featured social media application replicating core Facebook functionality with a Firebase backend. Real-time data sync, user authentication, and a mobile-first UI.',
-        features: ['Email/password & Google OAuth via Firebase Auth', 'Real-time posts feed with Firestore listeners', 'Like and comment system with live updates', 'Real-time one-on-one chat', 'User profiles with photo upload & bio', 'Friend/follow system'],
-        stack: ['Flutter', 'Dart', 'Firebase Auth', 'Firestore', 'Cloud Storage', 'Provider'], github: '#', demo: null
+        features: [
+          'Email/password & Google OAuth via Firebase Auth',
+          'Real-time posts feed with Firestore listeners',
+          'Like and comment system with live updates',
+          'Real-time one-on-one chat',
+          'User profiles with photo upload & bio',
+          'Friend/follow system'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase Auth', 'Firestore', 'Cloud Storage', 'Provider'],
+        github: '#',
+        demo: null
       },
+
       bhansa: {
-        emoji: '🍜', bg: 'linear-gradient(135deg,#f04a4a,#b03030)', title: 'Bhansa Ghar',
+        image: 'assets/projects/betzy.jpg',
+        bg: 'linear-gradient(135deg,#f04a4a,#b03030)',
+        title: 'Bhansa Ghar',
         desc: 'A recipe discovery and management app tailored for Nepali cuisine. Intuitive UI, searchable recipe database, and Firebase-powered content management.',
-        features: ['Searchable recipe library via Firestore queries', 'Category-based browsing (veg, non-veg, desserts)', 'Firebase backend for recipe CRUD operations', 'Clean UI with smooth transitions', 'Favorites/saved recipes feature'],
-        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Provider'], github: '#', demo: null
+        features: [
+          'Searchable recipe library via Firestore queries',
+          'Category-based browsing (veg, non-veg, desserts)',
+          'Firebase backend for recipe CRUD operations',
+          'Clean UI with smooth transitions',
+          'Favorites/saved recipes feature'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Provider'],
+        github: '#',
+        demo: null
       },
+
       aadan: {
-        emoji: '📚', bg: 'linear-gradient(135deg,#4af080,#2db860)', title: 'Aadan Pradan',
+        image: 'assets/projects/aadanpradan.jpg',
+        bg: 'linear-gradient(135deg,#4af080,#2db860)',
+        title: 'Aadan Pradan',
         desc: 'Built entirely in one day as part of a competitive code challenge. A community book donation and exchange platform — from concept to deployment in under 24 hours.',
-        features: ['Add books for donation or exchange', 'Browse available books from other users', 'Firebase Auth for user management', 'Firestore for real-time book listings', 'Shipped in a one-day code challenge'],
-        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Firebase Auth'], github: '#', demo: null
+        features: [
+          'Add books for donation or exchange',
+          'Browse available books from other users',
+          'Firebase Auth for user management',
+          'Firestore for real-time book listings',
+          'Shipped in a one-day code challenge'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Firebase Auth'],
+        github: '#',
+        demo: null
       },
+
       portfolio: {
-        emoji: '🌐', bg: 'linear-gradient(135deg,#4af0b0,#2dc8e8)', title: 'Portfolio Website',
+        image: 'assets/projects/portfolio.jpg',
+        bg: 'linear-gradient(135deg,#4af0b0,#2dc8e8)',
+        title: 'Portfolio Website',
         desc: 'A personal portfolio with a clean, minimalist design philosophy — smooth scrolling, responsive layout, and professional presentation deployed on Vercel.',
-        features: ['Smooth scroll navigation between sections', 'Responsive design for mobile & desktop', 'GitHub and LinkedIn deep links', 'Deployed on Vercel for fast global CDN', 'Project showcase with live demo links'],
-        stack: ['Flutter Web', 'Dart', 'Vercel'], github: '#', demo: 'https://subintamang.vercel.app'
+        features: [
+          'Smooth scroll navigation between sections',
+          'Responsive design for mobile & desktop',
+          'GitHub and LinkedIn deep links',
+          'Deployed on Vercel for fast global CDN',
+          'Project showcase with live demo links'
+        ],
+        stack: ['Flutter Web', 'Dart', 'Vercel'],
+        github: '#',
+        demo: 'https://subintamang.vercel.app'
       },
     };
 
@@ -481,22 +545,25 @@
     const certs = {
       flutter: {
         /* imageSrc: replace null with your image path, e.g. 'certs/flutter.jpg' */
-        imageSrc: "assets/Br.jpeg",
-         emoji: '🎯', bg: 'linear-gradient(135deg,#0468d7,#02a9f4)',
+        imageSrc: "assets/project/Br.jpeg",
+        emoji: '🎯', bg: 'linear-gradient(135deg,#0468d7,#02a9f4)',
         title: 'Flutter Development Certificate', issuer: 'Broadway Infosys · Kathmandu, Nepal', issued: '2023',
         desc: 'Completed an intensive Flutter development training covering widget architecture, state management, Firebase integration, and cross-platform UI design. Hands-on projects validated core mobile development skills.',
         skills: ['Flutter', 'Dart', 'Firebase Integration', 'State Management', 'Widget Architecture', 'UI/UX Design'],
         verifyUrl: '#', /* replace with your credential link */
       },
       python: {
-        imageSrc: null, emoji: '🐍', bg: 'linear-gradient(135deg,#3776ab,#ffd343)',
+        imageSrc: "assets/project/python.png",
+        emoji: '🐍', bg: 'linear-gradient(135deg,#3776ab,#ffd343)',
         title: 'Python (Problem Solving) Certificate', issuer: 'HackerRank', issued: '2023',
         desc: 'Earned the HackerRank Python certification by demonstrating proficiency in core Python programming concepts, data structures, algorithms, and problem-solving techniques under timed conditions.',
         skills: ['Python 3', 'Data Structures', 'Algorithms', 'Problem Solving', 'OOP Fundamentals'],
-        verifyUrl: 'https://www.hackerrank.com/certificates',
+          verifyUrl: 'https://www.hackerrank.com/certificates/d40bff4cca22',
+        viewUrl: 'https://www.hackerrank.com/certificates/iframe/d40bff4cca22'
       },
       azure: {
-        imageSrc: null, emoji: '☁️', bg: 'linear-gradient(135deg,#0078d4,#50b4ff)',
+        imageSrc: "assets/project/microsoft.png",
+        emoji: '☁️', bg: 'linear-gradient(135deg,#0078d4,#50b4ff)',
         title: 'Computer Vision with Azure Cognitive Services', issuer: 'Microsoft · Azure AI', issued: '2024',
         desc: 'Microsoft-certified training in computer vision using Azure Cognitive Services. Covered image analysis, object detection, OCR, and integrating Azure Vision APIs into real applications.',
         skills: ['Azure Cognitive Services', 'Computer Vision API', 'Image Analysis', 'OCR', 'Azure SDK', 'REST API Integration'],
@@ -553,7 +620,7 @@
     <div class="modal-stack">${skills}</div>
     <div class="modal-actions">
       <a href="${c.verifyUrl}" target="_blank" class="verify-btn"><i class="fas fa-shield-alt"></i> Verify Certificate</a>
-      <a href="${c.verifyUrl}" target="_blank" class="btn-sm btn-sm-ghost"><i class="fas fa-external-link-alt"></i> View Online</a>
+      <a href="${c.viewUrl}" target="_blank" class="btn-sm btn-sm-ghost"><i class="fas fa-external-link-alt"></i> View Online</a>
     </div>`;
       showModal();
     }
