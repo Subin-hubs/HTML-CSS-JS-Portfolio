@@ -14,6 +14,13 @@
   <link rel="stylesheet" href="style.css" />
 
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("gfAr7y1LHkRZj921l");
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -140,27 +147,27 @@
       </div>
       <div class="skills-grid">
         <div class="skill-cat c1 reveal">
-          <div class="skill-cat-icon">📱</div>
+      
           <div class="skill-cat-title">Mobile Development</div>
           <div class="skill-tags"><span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span
               class="skill-tag">Provider</span><span class="skill-tag">Bloc</span><span class="skill-tag">Clean
               Architecture</span></div>
         </div>
         <div class="skill-cat c2 reveal">
-          <div class="skill-cat-icon">🔥</div>
+
           <div class="skill-cat-title">Backend & Database</div>
           <div class="skill-tags"><span class="skill-tag">Firebase Auth</span><span
               class="skill-tag">Firestore</span><span class="skill-tag">Realtime DB</span><span class="skill-tag">REST
               APIs</span><span class="skill-tag">CRUD Operations</span></div>
         </div>
         <div class="skill-cat c3 reveal">
-          <div class="skill-cat-icon">🐍</div>
+
           <div class="skill-cat-title">Languages & AI</div>
           <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Dart</span><span
               class="skill-tag">Computer Vision</span><span class="skill-tag">Azure Cognitive Services</span></div>
         </div>
         <div class="skill-cat c4 reveal">
-          <div class="skill-cat-icon">🛠️</div>
+
           <div class="skill-cat-title">Dev Tools</div>
           <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
               class="skill-tag">VS Code</span><span class="skill-tag">Android Studio</span></div>
@@ -201,15 +208,16 @@
           </div>
         </div>
 
-        <div class="project-card p2 reveal" onclick="openProjectModal('bhansa')">
+        <div class="project-card p2 reveal" onclick="openProjectModal('betzy')">
           <div class="project-thumb">
-            <img src="assets/projects/betzy.jpg" alt="Bhansa Ghar" style="width:100%; height:100%; object-fit:cover;">
+            <img src="assets/projects/betzy.jpg" alt="Betzy" style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
             <div class="project-num">02 / Utility App</div>
-            <div class="project-title">Bhansa Ghar</div>
-            <div class="project-desc">A recipe discovery app with Firebase backend, powerful search, and a clean,
-              food-forward UI designed for everyday cooks.</div>
+            <div class="project-title">Betzy</div>
+            <div class="project-desc">A competitive challenge-based mobile app where users go head-to-head in tasks and
+              activities. Built with a Flutter
+              frontend and Firebase backend, ensuring real-time updates and seamless user interaction.</div>
             <div class="project-stack"><span class="stack-tag">Flutter</span><span
                 class="stack-tag">Firebase</span><span class="stack-tag">Firestore</span></div>
             <div class="project-actions">
@@ -253,7 +261,7 @@
 
         <div class="project-card p4 reveal" onclick="openProjectModal('portfolio')">
           <div class="project-thumb">
-            <img src="assets/projects/portfolio.jpg" alt="Portfolio Website"
+            <img src="assets/projects/portfolio.jpeg" alt="Portfolio Website"
               style="width:100%; height:100%; object-fit:cover;">
           </div>
           <div class="project-body">
@@ -406,11 +414,11 @@
             <div class="contact-card-icon" style="background:rgba(74,240,176,.1)">📧</div>
             <div>
               <div class="contact-card-label">Email</div>
-              <div class="contact-card-value">subintamang@email.com</div>
+              <div class="contact-card-value">subintamang008@email.com</div>
             </div>
             <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
           </a>
-          <a href="https://github.com" target="_blank" class="contact-card">
+          <a href="https://github.com/Subin-hubs" target="_blank" class="contact-card">
             <div class="contact-card-icon" style="background:rgba(255,255,255,.06)"><i class="fab fa-github"
                 style="color:var(--text);font-size:1.2rem"></i></div>
             <div>
@@ -419,7 +427,7 @@
             </div>
             <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
           </a>
-          <a href="https://linkedin.com" target="_blank" class="contact-card">
+          <a href="https://www.linkedin.com/in/subin-tamang-394179300/" target="_blank" class="contact-card">
             <div class="contact-card-icon" style="background:rgba(10,102,194,.15)"><i class="fab fa-linkedin-in"
                 style="color:#0a66c2;font-size:1.2rem"></i></div>
             <div>
@@ -447,7 +455,21 @@
             <div id="formSuccess" style="display:none;text-align:center;padding:40px 0;color:var(--accent)">
               <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
               <div style="font-weight:700;font-size:1.1rem;margin-bottom:6px">Message Sent!</div>
-              <div style="color:var(--muted);font-size:.87rem">I'll get back to you within 24 hours.</div>
+              <div style="color:var(--muted);font-size:.87rem;margin-bottom:20px">
+                I'll get back to you within 24 hours.
+              </div>
+            
+              <button onclick="resetForm()" style="
+                  padding:10px 18px;
+                  border-radius:10px;
+                  border:1px solid var(--border);
+                  background:var(--surface2);
+                  color:var(--text);
+                  cursor:pointer;
+                  font-weight:600;
+                ">
+                Send Another Message
+              </button>
             </div>
           </div>
         </div>
@@ -458,10 +480,10 @@
   <!-- FOOTER -->
   <footer>
     <span class="footer-brand">Subin Tamang.</span>
-    <span class="footer-copy">© 2025 · Built with 💚 in Flutter & HTML</span>
+    <span class="footer-copy">© 2026 · Built with 💚 in 🤖 & HTML</span>
     <div class="footer-socials">
-      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Subin-hubs" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/subin-tamang-394179300/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://subintamang.vercel.app" target="_blank"><i class="fas fa-globe"></i></a>
     </div>
   </footer>
@@ -469,6 +491,55 @@
 
 
   <script>
+  function submitForm() {
+    const n = document.getElementById('cf-name').value.trim();
+    const em = document.getElementById('cf-email').value.trim();
+    const sub = document.getElementById('cf-subject').value.trim();
+    const m = document.getElementById('cf-message').value.trim();
+
+    const btn = document.querySelector('.form-submit');
+
+    if (!n || !em || !sub || !m) {
+      alert('Please fill all fields');
+      return;
+    }
+
+    btn.innerHTML = "Sending...";
+    btn.disabled = true;
+
+    emailjs.send("service_y4t7prr", "template_e4ks0ok", {
+      from_name: n,
+      from_email: em,
+      subject: sub,
+      message: m
+    })
+      .then((res) => {
+        console.log("SUCCESS:", res);
+
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      })
+      .catch((err) => {
+        console.log("EMAILJS ERROR:", err);
+        alert("Failed to send message");
+      })
+      .finally(() => {
+        btn.innerHTML = "Send Message";
+        btn.disabled = false;
+      });
+  }
+
+  function resetForm() {
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('formSuccess').style.display = 'none';
+
+      document.getElementById('cf-name').value = '';
+      document.getElementById('cf-email').value = '';
+      document.getElementById('cf-subject').value = '';
+      document.getElementById('cf-message').value = '';
+    }
+
+
     /* PROJECT DATA */
     const projects = {
       fb: {
@@ -489,17 +560,17 @@
         demo: null
       },
 
-      bhansa: {
-        image: 'assets/projects/betzy.jpg',
+      betzy: {
+        image: 'assets/projects/betyzylogo.jpeg',
         bg: 'linear-gradient(135deg,#f04a4a,#b03030)',
-        title: 'Bhansa Ghar',
-        desc: 'A recipe discovery and management app tailored for Nepali cuisine. Intuitive UI, searchable recipe database, and Firebase-powered content management.',
+        title: 'Betzy',
+        desc: 'A competitive challenge-based mobile app where users go head-to-head in tasks and activities. Built with a Flutter frontend and Firebase backend, ensuring real-time updates and seamless user interaction.',
         features: [
-          'Searchable recipe library via Firestore queries',
-          'Category-based browsing (veg, non-veg, desserts)',
-          'Firebase backend for recipe CRUD operations',
-          'Clean UI with smooth transitions',
-          'Favorites/saved recipes feature'
+          'User vs User challenge system',
+          'Admin approval system for fair gameplay',
+          'Real-time updates using Firebase',
+          'Secure authentication and user management',
+          'Smooth and responsive Flutter UI'
         ],
         stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Provider'],
         github: '#',
@@ -507,7 +578,7 @@
       },
 
       aadan: {
-        image: 'assets/projects/aadanpradan.jpg',
+        image: 'assets/projects/aadanpradanlogo.png',
         bg: 'linear-gradient(135deg,#4af080,#2db860)',
         title: 'Aadan Pradan',
         desc: 'Built entirely in one day as part of a competitive code challenge. A community book donation and exchange platform — from concept to deployment in under 24 hours.',
@@ -524,7 +595,7 @@
       },
 
       portfolio: {
-        image: 'assets/projects/portfolio.jpg',
+        image: 'assets/projects/portfolio.jpeg',
         bg: 'linear-gradient(135deg,#4af0b0,#2dc8e8)',
         title: 'Portfolio Website',
         desc: 'A personal portfolio with a clean, minimalist design philosophy — smooth scrolling, responsive layout, and professional presentation deployed on Vercel.',
@@ -535,7 +606,7 @@
           'Deployed on Vercel for fast global CDN',
           'Project showcase with live demo links'
         ],
-        stack: ['Flutter Web', 'Dart', 'Vercel'],
+        stack: ['HTML', 'CSS', 'JavaScript','Vercel'],
         github: '#',
         demo: 'https://subintamang.vercel.app'
       },
@@ -544,13 +615,14 @@
     /* CERT DATA */
     const certs = {
       flutter: {
-        /* imageSrc: replace null with your image path, e.g. 'certs/flutter.jpg' */
         imageSrc: "assets/project/Br.jpeg",
         emoji: '🎯', bg: 'linear-gradient(135deg,#0468d7,#02a9f4)',
         title: 'Flutter Development Certificate', issuer: 'Broadway Infosys · Kathmandu, Nepal', issued: '2023',
         desc: 'Completed an intensive Flutter development training covering widget architecture, state management, Firebase integration, and cross-platform UI design. Hands-on projects validated core mobile development skills.',
+        Certification_number: 'B94791000',
         skills: ['Flutter', 'Dart', 'Firebase Integration', 'State Management', 'Widget Architecture', 'UI/UX Design'],
-        verifyUrl: '#', /* replace with your credential link */
+        verifyUrl: 'https://broadwayinfosys.com/certificate-verification-response ',
+        viewUrl: 'https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IlNMOURpbmdVcWxzK1lRdFBqbzFiSUE9PSIsInZhbHVlIjoiSDQ1L2J6NXkwR0RvY0JCd2gyNHQ5dz09IiwibWFjIjoiY2M5OTUwOGRkMjZiYTZkM2RlMjFjOTlhOWVkYmYyZDc4Njc4OWI0ZTkyYTUzZWFlNThlMGY5YjYzMmJiYjg5YSIsInRhZyI6IiJ9'
       },
       python: {
         imageSrc: "assets/project/python.png",
@@ -558,7 +630,7 @@
         title: 'Python (Problem Solving) Certificate', issuer: 'HackerRank', issued: '2023',
         desc: 'Earned the HackerRank Python certification by demonstrating proficiency in core Python programming concepts, data structures, algorithms, and problem-solving techniques under timed conditions.',
         skills: ['Python 3', 'Data Structures', 'Algorithms', 'Problem Solving', 'OOP Fundamentals'],
-          verifyUrl: 'https://www.hackerrank.com/certificates/d40bff4cca22',
+        verifyUrl: 'https://www.hackerrank.com/certificates/d40bff4cca22',
         viewUrl: 'https://www.hackerrank.com/certificates/iframe/d40bff4cca22'
       },
       azure: {
@@ -567,7 +639,8 @@
         title: 'Computer Vision with Azure Cognitive Services', issuer: 'Microsoft · Azure AI', issued: '2024',
         desc: 'Microsoft-certified training in computer vision using Azure Cognitive Services. Covered image analysis, object detection, OCR, and integrating Azure Vision APIs into real applications.',
         skills: ['Azure Cognitive Services', 'Computer Vision API', 'Image Analysis', 'OCR', 'Azure SDK', 'REST API Integration'],
-        verifyUrl: 'https://learn.microsoft.com',
+        verifyUrl: 'https://coursera.org/verify/R9EBX3YY2DCA',
+        viewUrl: 'https://coursera.org/verify/R9EBX3YY2DCA'
       },
     };
 
@@ -575,7 +648,17 @@
     function openProjectModal(key) {
       const p = projects[key];
       document.getElementById('modalThumb').style.background = p.bg;
-      document.getElementById('modalThumb').innerHTML = `<span style="position:relative;z-index:1;font-size:6rem">${p.emoji}</span>`;
+      if (p.imageSrc || p.image) {
+        const img = p.imageSrc || p.image;
+        document.getElementById('modalThumb').innerHTML =
+          document.getElementById('modalThumb').innerHTML = `
+  <img src="${img}" 
+       style="display:block;width:100%;height:100%;object-fit:cover;" />
+`;
+      } else {
+        document.getElementById('modalThumb').innerHTML =
+          `<span style="font-size:6rem">📦</span>`;
+      }
       const feats = p.features.map(f => `<li>${f}</li>`).join('');
       const stack = p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('');
       const demo = p.demo ? `<a href="${p.demo}" target="_blank" class="btn-sm btn-sm-accent"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : '';
@@ -642,16 +725,6 @@
 
     /* MOBILE NAV */
     function toggleNav() { document.getElementById('navLinks').classList.toggle('open') }
-
-    /* FORM */
-    function submitForm() {
-      const n = document.getElementById('cf-name').value.trim();
-      const em = document.getElementById('cf-email').value.trim();
-      const m = document.getElementById('cf-message').value.trim();
-      if (!n || !em || !m) { alert('Please fill in all required fields.'); return }
-      document.getElementById('contactForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
-    }
 
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() });
   </script>
