@@ -270,8 +270,8 @@
             <div class="project-title">Portfolio Website</div>
             <div class="project-desc">A clean, minimalist personal portfolio with smooth scrolling, GitHub & LinkedIn
               integrations, and a professional design.</div>
-            <div class="project-stack"><span class="stack-tag">Flutter Web</span><span
-                class="stack-tag">Dart</span><span class="stack-tag">Vercel</span></div>
+            <div class="project-stack"><span class="stack-tag">HTML</span><span
+                class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Vercel</span></div>
             <div class="project-actions">
               <a href="https://subintamang.vercel.app" target="_blank" class="btn-sm btn-sm-accent"
                 onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Live</a>
@@ -280,6 +280,43 @@
             </div>
           </div>
         </div>
+        <div class="project-card p4 reveal" onclick="openProjectModal('sochmoney')">
+        
+          <div class="project-thumb">
+            <img src="assets/projects/sochmoney1.png" alt="SochMoney App" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        
+          <div class="project-body">
+        
+            <div class="project-num">01 / Mobile App</div>
+        
+            <div class="project-title">SochMoney</div>
+            <div class="project-desc">
+              A smart expense decision app that helps users think before they buy.
+              It analyzes purchases, shows time-to-earn value, and builds better financial habits.
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Riverpod</span>
+              <span class="stack-tag">Hive</span>
+              <span class="stack-tag">Firebase</span>
+            </div>
+            <div class="project-actions">
+        
+              <a href="#" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
+                <i class="fas fa-mobile-alt"></i> App Demo
+              </a>
+        
+              <a href="https://github.com/yourusername/sochmoney" target="_blank" class="btn-sm btn-sm-ghost"
+                onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+        
+            </div>
+        
+          </div>
+        </div>
+
 
       </div>
     </div>
@@ -611,6 +648,33 @@
         github: '#',
         demo: 'https://subintamang.vercel.app'
       },
+      sochmoney: {
+        image: 'assets/projects/sochmoney.png',
+        bg: 'linear-gradient(135deg,#2563eb,#10b981)',
+        title: 'SochMoney App',
+        desc: 'A smart spending decision app that helps users think before they buy. It analyzes purchases based on income, savings, and time-to-earn value to build better financial habits.',
+
+        features: [
+          'Smart purchase analysis (Buy / Think / Avoid decisions)',
+          'Time-to-earn calculation for every expense',
+          'Savings tracking with monthly insights',
+          'Offline-first data storage using Hive',
+          'Clean and responsive UI with dark mode support',
+          'Saved transactions with swipe-to-delete feature'
+        ],
+
+        stack: [
+          'Flutter',
+          'Dart',
+          'Riverpod',
+          'Hive',
+          'GoRouter',
+          'Local Notifications'
+        ],
+
+        github: '#',
+        demo: null
+      }
     };
 
     /* CERT DATA */
