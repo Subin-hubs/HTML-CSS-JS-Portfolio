@@ -37,6 +37,10 @@
       <li><a href="#certifications">Certs</a></li>
       <li><a href="#contact" class="nav-cta">Hire Me</a></li>
     </ul>
+    <!-- Theme toggle (root site) -->
+    <button id="themeToggleRoot" class="nav-cta" aria-pressed="false" aria-label="Toggle light / dark theme">
+      <i class="fas fa-sun"></i>
+    </button>
     <div class="hamburger" id="hamburger" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </div>
@@ -72,10 +76,6 @@
           <div class="stat-card">
             <div class="stat-num">2+</div>
             <div class="stat-label">Years Learning</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">1</div>
-            <div class="stat-label">Day Code Challenge Win</div>
           </div>
         </div>
         <div class="hero-tech-marquee">
@@ -148,7 +148,7 @@
       </div>
       <div class="skills-grid">
         <div class="skill-cat c1 reveal">
-      
+
           <div class="skill-cat-title">Mobile Development</div>
           <div class="skill-tags"><span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span
               class="skill-tag">Provider</span><span class="skill-tag">Bloc</span><span class="skill-tag">Clean
@@ -270,8 +270,8 @@
             <div class="project-title">Portfolio Website</div>
             <div class="project-desc">A clean, minimalist personal portfolio with smooth scrolling, GitHub & LinkedIn
               integrations, and a professional design.</div>
-            <div class="project-stack"><span class="stack-tag">HTML</span><span
-                class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Vercel</span></div>
+            <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
+                class="stack-tag">JavaScript</span><span class="stack-tag">Vercel</span></div>
             <div class="project-actions">
               <a href="https://subintamang.vercel.app" target="_blank" class="btn-sm btn-sm-accent"
                 onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Live</a>
@@ -281,15 +281,16 @@
           </div>
         </div>
         <div class="project-card p4 reveal" onclick="openProjectModal('sochmoney')">
-        
+
           <div class="project-thumb">
-            <img src="assets/projects/sochmoney1.png" alt="SochMoney App" style="width:100%; height:100%; object-fit:cover;">
+            <img src="assets/projects/sochmoney1.png" alt="SochMoney App"
+              style="width:100%; height:100%; object-fit:cover;">
           </div>
-        
+
           <div class="project-body">
-        
+
             <div class="project-num">01 / Mobile App</div>
-        
+
             <div class="project-title">SochMoney</div>
             <div class="project-desc">
               A smart expense decision app that helps users think before they buy.
@@ -302,18 +303,18 @@
               <span class="stack-tag">Firebase</span>
             </div>
             <div class="project-actions">
-        
+
               <a href="#" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
                 <i class="fas fa-mobile-alt"></i> App Demo
               </a>
-        
+
               <a href="https://github.com/yourusername/sochmoney" target="_blank" class="btn-sm btn-sm-ghost"
                 onclick="event.stopPropagation()">
                 <i class="fab fa-github"></i> GitHub
               </a>
-        
+
             </div>
-        
+
           </div>
         </div>
 
@@ -480,9 +481,9 @@
             <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:24px;letter-spacing:-.02em">Send a Message</h3>
             <div class="contact-form" id="contactForm">
               <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text"
-                  placeholder="John Doe" id="cf-name" /></div>
+                  placeholder="Your name  " id="cf-name" /></div>
               <div class="form-group"><label class="form-label">Email Address</label><input class="form-input"
-                  type="email" placeholder="john@example.com" id="cf-email" /></div>
+                  type="email" placeholder="your_email@example.com" id="cf-email" /></div>
               <div class="form-group"><label class="form-label">Subject</label><input class="form-input" type="text"
                   placeholder="Project collaboration..." id="cf-subject" /></div>
               <div class="form-group"><label class="form-label">Message</label><textarea class="form-input"
@@ -496,7 +497,7 @@
               <div style="color:var(--muted);font-size:.87rem;margin-bottom:20px">
                 I'll get back to you within 24 hours.
               </div>
-            
+
               <button onclick="resetForm()" style="
                   padding:10px 18px;
                   border-radius:10px;
@@ -529,45 +530,45 @@
 
 
   <script>
-  function submitForm() {
-    const n = document.getElementById('cf-name').value.trim();
-    const em = document.getElementById('cf-email').value.trim();
-    const sub = document.getElementById('cf-subject').value.trim();
-    const m = document.getElementById('cf-message').value.trim();
+    function submitForm() {
+      const n = document.getElementById('cf-name').value.trim();
+      const em = document.getElementById('cf-email').value.trim();
+      const sub = document.getElementById('cf-subject').value.trim();
+      const m = document.getElementById('cf-message').value.trim();
 
-    const btn = document.querySelector('.form-submit');
+      const btn = document.querySelector('.form-submit');
 
-    if (!n || !em || !sub || !m) {
-      alert('Please fill all fields');
-      return;
+      if (!n || !em || !sub || !m) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      btn.innerHTML = "Sending...";
+      btn.disabled = true;
+
+      emailjs.send("service_y4t7prr", "template_e4ks0ok", {
+        from_name: n,
+        from_email: em,
+        subject: sub,
+        message: m
+      })
+        .then((res) => {
+          console.log("SUCCESS:", res);
+
+          document.getElementById('contactForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        })
+        .catch((err) => {
+          console.log("EMAILJS ERROR:", err);
+          alert("Failed to send message");
+        })
+        .finally(() => {
+          btn.innerHTML = "Send Message";
+          btn.disabled = false;
+        });
     }
 
-    btn.innerHTML = "Sending...";
-    btn.disabled = true;
-
-    emailjs.send("service_y4t7prr", "template_e4ks0ok", {
-      from_name: n,
-      from_email: em,
-      subject: sub,
-      message: m
-    })
-      .then((res) => {
-        console.log("SUCCESS:", res);
-
-        document.getElementById('contactForm').style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      })
-      .catch((err) => {
-        console.log("EMAILJS ERROR:", err);
-        alert("Failed to send message");
-      })
-      .finally(() => {
-        btn.innerHTML = "Send Message";
-        btn.disabled = false;
-      });
-  }
-
-  function resetForm() {
+    function resetForm() {
       document.getElementById('contactForm').style.display = 'block';
       document.getElementById('formSuccess').style.display = 'none';
 
@@ -644,7 +645,7 @@
           'Deployed on Vercel for fast global CDN',
           'Project showcase with live demo links'
         ],
-        stack: ['HTML', 'CSS', 'JavaScript','Vercel'],
+        stack: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
         github: '#',
         demo: 'https://subintamang.vercel.app'
       },
@@ -783,15 +784,75 @@
     }, { threshold: .1 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    /* NAVBAR */
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').style.background = window.scrollY > 40 ? 'rgba(11,12,15,.97)' : 'rgba(11,12,15,.85)';
-    });
+    /* NAVBAR - scrolled and hide-on-scroll (hide when scrolling down, show when scrolling up) */
+    (function () {
+      const nav = document.getElementById('navbar');
+      if (!nav) return;
+      let lastY = window.scrollY;
+      let ticking = false;
+
+      function onScroll() {
+        const current = window.scrollY;
+
+        if (current > lastY && current > 100) {
+          // scrolling down
+          nav.classList.add('nav-hidden');
+        } else {
+          // scrolling up or near top
+          nav.classList.remove('nav-hidden');
+        }
+
+        // maintain scrolled appearance when past threshold
+        nav.classList.toggle('scrolled', current > 40);
+
+        lastY = current <= 0 ? 0 : current;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
 
     /* MOBILE NAV */
-    function toggleNav() { document.getElementById('navLinks').classList.toggle('open') }
+    function toggleNav() {
+      const links = document.getElementById('navLinks');
+      const ham = document.getElementById('hamburger');
+      if (links) links.classList.toggle('open');
+      if (ham) ham.classList.toggle('open');
+    }
 
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal() });
+  </script>
+
+  <script>
+    // Root theme toggle: toggles a `theme-light` class on body and persists choice
+    (function () {
+      const btn = document.getElementById('themeToggleRoot');
+      if (!btn) return;
+      const apply = (isLight) => {
+        document.body.classList.toggle('theme-light', !!isLight);
+        document.body.classList.toggle('theme-dark', !isLight);
+        btn.setAttribute('aria-pressed', (!!isLight).toString());
+        btn.innerHTML = isLight ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+        try { localStorage.setItem('site-theme', '' + (isLight ? 'light' : 'dark')); } catch (e) { }
+        // ensure nav updates visually in older browsers by toggling inline CSS fallback
+        const nav = document.getElementById('navbar');
+        if (nav) nav.style.background = isLight ? '' : '';
+      };
+
+      // initialize from localStorage or system preference
+      try {
+        const saved = localStorage.getItem('site-theme');
+        if (saved) apply(saved === 'light');
+        else apply(window.matchMedia && window.matchMedia('(prefers-color-scheme:light)').matches);
+      } catch (e) { apply(false) }
+
+      btn.addEventListener('click', () => { const isLight = !document.body.classList.contains('theme-light'); apply(isLight); });
+    })();
   </script>
 </body>
 
