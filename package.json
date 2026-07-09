@@ -1,0 +1,24 @@
+{
+  "name": "html-css-js-portfolio",
+  "version": "1.0.0",
+  "description": "A small personal portfolio site built with plain HTML, CSS and a bit of JavaScript. This README documents the project structure and the purpose of each file and folder so you can quickly understand, run, or modify the site.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subin-hubs/HTML-CSS-JS-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Subin-hubs/HTML-CSS-JS-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Subin-hubs/HTML-CSS-JS-Portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
