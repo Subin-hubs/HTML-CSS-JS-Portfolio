@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subin Tamang — Flutter & Firebase Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("gfAr7y1LHkRZj921l");
+    })();
+  </script>
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">ST.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <!-- Theme toggle (root site) -->
+    <button id="themeToggleRoot" class="nav-cta" aria-pressed="false" aria-label="Toggle light / dark theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag"><span class="dot"></span> Open to Opportunities</div>
+        <h1 class="hero-name">Subin<br /><span>Tamang</span></h1>
+        <p class="hero-role">Flutter & Firebase Developer</p>
+        <p class="hero-desc">Building cross-platform mobile experiences with clean architecture and real-time Firebase
+          backends. Passionate about turning ideas into polished, production-ready apps.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary"><i class="fas fa-layer-group"></i> View Projects</a>
+          <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-stat-grid">
+          <div class="stat-card">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Years Learning</div>
+          </div>
+        </div>
+        <div class="hero-tech-marquee">
+          <div class="marquee-track">
+            <span class="marquee-item"><i class="fas fa-mobile-alt"></i>Flutter</span>
+            <span class="marquee-item"><i class="fas fa-fire"></i>Firebase</span>
+            <span class="marquee-item"><i class="fas fa-database"></i>Firestore</span>
+            <span class="marquee-item"><i class="fab fa-python"></i>Python</span>
+            <span class="marquee-item"><i class="fas fa-cloud"></i>Azure CV</span>
+            <span class="marquee-item"><i class="fab fa-git-alt"></i>Git</span>
+            <span class="marquee-item"><i class="fas fa-cubes"></i>Dart</span>
+            <span class="marquee-item"><i class="fas fa-plug"></i>REST API</span>
+            <span class="marquee-item"><i class="fas fa-mobile-alt"></i>Flutter</span>
+            <span class="marquee-item"><i class="fas fa-fire"></i>Firebase</span>
+            <span class="marquee-item"><i class="fas fa-database"></i>Firestore</span>
+            <span class="marquee-item"><i class="fab fa-python"></i>Python</span>
+            <span class="marquee-item"><i class="fas fa-cloud"></i>Azure CV</span>
+            <span class="marquee-item"><i class="fab fa-git-alt"></i>Git</span>
+            <span class="marquee-item"><i class="fas fa-cubes"></i>Dart</span>
+            <span class="marquee-item"><i class="fas fa-plug"></i>REST API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-orbit orbit-1"></div>
+          <div class="about-orbit orbit-2"></div>
+          <div class="about-avatar">
+            <div>
+              <img src="assets/subin.png" alt="Subin Tamang" />
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Crafting Apps,<br /><em
+              style="font-family:var(--ff-serif);font-weight:400;font-style:italic;">One Widget at a Time</em></h2>
+          <p>I'm <strong>Subin Tamang</strong>, a Flutter & Firebase developer currently pursuing a <strong>Bachelor of
+              Information Technology (BIT)</strong> at Texas College, Nepal. I specialize in building cross-platform
+            mobile applications that are fast, scalable, and intuitive.</p>
+          <p>My core stack revolves around <strong>Flutter, Dart, and Firebase</strong> — from authentication and
+            Firestore to real-time databases. I follow <strong>Clean Architecture principles</strong> and leverage state
+            management patterns like Provider and Bloc to keep codebases maintainable.</p>
+          <p>Beyond mobile, I've explored <strong>Computer Vision with Microsoft Azure</strong> and Python-based
+            solutions. I thrive in challenge-driven environments — I even shipped a full app in a single day during a
+            competitive code challenge.</p>
+          <div class="about-links">
+            <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i>
+              LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Tech Stack</div>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-sub">Technologies I work with daily to build scalable, production-ready applications.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cat c1 reveal">
+
+          <div class="skill-cat-title">Mobile Development</div>
+          <div class="skill-tags"><span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span
+              class="skill-tag">Provider</span><span class="skill-tag">Bloc</span><span class="skill-tag">Clean
+              Architecture</span></div>
+        </div>
+        <div class="skill-cat c2 reveal">
+
+          <div class="skill-cat-title">Backend & Database</div>
+          <div class="skill-tags"><span class="skill-tag">Firebase Auth</span><span
+              class="skill-tag">Firestore</span><span class="skill-tag">Realtime DB</span><span class="skill-tag">REST
+              APIs</span><span class="skill-tag">CRUD Operations</span></div>
+        </div>
+        <div class="skill-cat c3 reveal">
+
+          <div class="skill-cat-title">Languages & AI</div>
+          <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Dart</span><span
+              class="skill-tag">Computer Vision</span><span class="skill-tag">Azure Cognitive Services</span></div>
+        </div>
+        <div class="skill-cat c4 reveal">
+
+          <div class="skill-cat-title">Dev Tools</div>
+          <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
+              class="skill-tag">VS Code</span><span class="skill-tag">Android Studio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Work</div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+          <h2 class="section-title" style="margin-bottom: 0;">Featured Projects</h2>
+          <a href="javascript:void(0)" onclick="openAllProjectsModal()"
+            style="color: var(--accent); text-decoration: underline; font-weight: 600; font-size: .9rem;">View all
+            Projects</a>
+        </div>
+        <p class="section-sub">Apps I've designed, developed, and shipped — click any card to explore details.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card p1 reveal" onclick="openProjectModal('fb')">
+          <div class="project-thumb">
+            <img src="assets/projects/facebook.jpg" alt="Facebook Clone"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <div class="project-num">01 / Social App</div>
+            <div class="project-title">Facebook Clone</div>
+            <div class="project-desc">A feature-rich social media clone with real-time feeds, chat, and Firebase
+              authentication — a fully functional social experience.</div>
+            <div class="project-stack"><span class="stack-tag">Flutter</span><span
+                class="stack-tag">Firebase</span><span class="stack-tag">Firestore</span><span
+                class="stack-tag">Auth</span></div>
+            <div class="project-actions">
+              <a href="https://github.com/Subin-hubs" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()"><i
+                  class="fab fa-github"></i>
+                GitHub</a>
+              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> Details</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card p2 reveal" onclick="openProjectModal('betzy')">
+          <div class="project-thumb">
+            <img src="assets/projects/betzy.jpg" alt="Betzy" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <div class="project-num">02 / Utility App</div>
+            <div class="project-title">Betzy</div>
+            <div class="project-desc">A competitive challenge-based mobile app where users go head-to-head in tasks and
+              activities. Built with a Flutter
+              frontend and Firebase backend, ensuring real-time updates and seamless user interaction.</div>
+            <div class="project-stack"><span class="stack-tag">Flutter</span><span
+                class="stack-tag">Firebase</span><span class="stack-tag">Firestore</span></div>
+            <div class="project-actions">
+              <a href="https://github.com/Subin-hubs" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()"><i
+                  class="fab fa-github"></i>
+                GitHub</a>
+              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> Details</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card p3 reveal" onclick="openProjectModal('aadan')">
+          <div class="project-thumb">
+            <img src="assets/projects/aadanpradan.jpg" alt="Aadan Pradan"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="project-body">
+            <div class="project-num">03 / Code Challenge</div>
+            <div class="project-title">Aadan Pradan</div>
+            <div class="project-desc">
+              Built in a single day during a competitive code challenge — a book donation & exchange platform with a
+              Firebase backend.
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Firebase</span>
+              <span class="stack-tag">Dart</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Subin-hubs" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <span class="btn-sm btn-sm-ghost">
+                <i class="fas fa-expand"></i> Details
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card p4 reveal" onclick="openProjectModal('portfolio')">
+          <div class="project-thumb">
+            <img src="assets/projects/portfolio.jpeg" alt="Portfolio Website"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-body">
+            <div class="project-num">04 / Web</div>
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-desc">A clean, minimalist personal portfolio with smooth scrolling, GitHub & LinkedIn
+              integrations, and a professional design.</div>
+            <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span
+                class="stack-tag">JavaScript</span><span class="stack-tag">Vercel</span></div>
+            <div class="project-actions">
+              <a href="https://www.subintamang.com.np/" target="_blank" class="btn-sm btn-sm-accent"
+                onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Subin-hubs" class="btn-sm btn-sm-ghost" onclick="event.stopPropagation()"><i
+                  class="fab fa-github"></i>
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card p4 reveal" onclick="openProjectModal('sochmoney')">
+
+          <div class="project-thumb">
+            <img src="assets/projects/sochmoney1.png" alt="SochMoney App"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="project-body">
+
+            <div class="project-num">01 / Mobile App</div>
+
+            <div class="project-title">SochMoney</div>
+            <div class="project-desc">
+              A smart expense decision app that helps users think before they buy.
+              It analyzes purchases, shows time-to-earn value, and builds better financial habits.
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">Flutter</span>
+              <span class="stack-tag">Riverpod</span>
+              <span class="stack-tag">Hive</span>
+              <span class="stack-tag">Firebase</span>
+            </div>
+            <div class="project-actions">
+
+              <a href="" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
+                <i class="fas fa-mobile-alt"></i> App Demo
+              </a>
+
+              <a href="https://github.com/Subin-hubs" target="_blank" class="btn-sm btn-sm-ghost"
+                onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+<div class="project-card p5 reveal" onclick="openProjectModal('agrova')">
+
+  <div class="project-thumb">
+    <img src="assets/projects/Aggrova.png" alt="AGROVA AI Agriculture App"
+      style="width:100%; height:100%; object-fit:cover;">
+  </div>
+
+  <div class="project-body">
+
+    <div class="project-num">03 / Hackathon Project</div>
+
+    <div class="project-title">AGROVA</div>
+
+    <div class="project-desc">
+      An AI-powered agriculture app that analyzes crop images to identify
+      potential diseases and provides confidence, severity, recommendations,
+      and prevention measures for farmers.
+    </div>
+
+    <div class="project-stack">
+      <span class="stack-tag">Flutter</span>
+      <span class="stack-tag">Dart</span>
+      <span class="stack-tag">FastAPI</span>
+      <span class="stack-tag">Gemini AI</span>
+      <span class="stack-tag">Firebase</span>
+    </div>
+
+    <div class="project-actions">
+
+      <!-- <a href="#" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()">
+        <i class="fas fa-mobile-alt"></i> App Demo
+      </a> -->
+
+      <a href="https://github.com/Subin-hubs" target="_blank" class="btn-sm btn-sm-ghost"
+        onclick="event.stopPropagation()">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIST MODAL -->
+  <div class="modal-overlay" id="listModal" onclick="closeListModalOuter(event)">
+    <div class="modal-box list-modal-box" id="listModalBox">
+      <button class="modal-close" onclick="closeListModal()"><i class="fas fa-times"></i></button>
+      <div class="list-modal-header" id="listModalHeader">All Projects</div>
+      <div class="list-modal-content" id="listModalContent"></div>
+    </div>
+  </div>
+
+  <!-- SHARED MODAL -->
+  <div class="modal-overlay" id="modal" onclick="closeModalOuter(event)">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-left" id="modalThumb"></div>
+      <div class="modal-right" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Background</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-sub">Academic foundations that ground my technical journey.</p>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-body">
+            <div class="edu-period">2023 — Present</div>
+            <div class="edu-degree">Bachelor of Information Technology (BIT)</div>
+            <div class="edu-school">Texas College · Kathmandu, Nepal</div>
+            <span class="edu-badge badge-ongoing">🟢 Ongoing</span>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-body">
+            <div class="edu-period">Completed</div>
+            <div class="edu-degree">Flutter Framework Training</div>
+            <div class="edu-school">Broadway Infosys · Tinkune, Kathmandu</div>
+            <span class="edu-badge badge-completed">✓ Completed</span>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-body">
+            <div class="edu-period">Completed</div>
+            <div class="edu-degree">+2 Management Stream</div>
+            <div class="edu-school">Texas Internatational College · Kathmandu, Nepal</div>
+            <span class="edu-badge badge-completed">✓ Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS — project-card style -->
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">Credentials</div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px;">
+          <h2 class="section-title" style="margin-bottom: 0;">Certifications</h2>
+          <a href="javascript:void(0)" onclick="openAllCertificatesModal()"
+            style="color: var(--accent); text-decoration: underline; font-weight: 600; font-size: .9rem;">View all
+            Certificates</a>
+        </div>
+        <p class="section-sub">Verified credentials from industry-recognized programs — click any card to view the
+          certificate and verify it.</p>
+      </div>
+      <div class="cert-cards-grid">
+
+        <!-- Flutter cert -->
+        <div class="cert-card-new cert-c1 reveal" onclick="openCertModal('flutter')">
+          <div class="cert-photo">
+            <img src="assets/project/Br.jpeg" alt="Flutter Certificate" />
+          </div>
+          <div class="cert-body-new">
+            <div class="cert-num">01 / Mobile Development</div>
+            <div class="cert-title-new">Flutter Development</div>
+            <div class="cert-issuer-new">Broadway Infosys · Kathmandu, Nepal</div>
+            <div class="cert-actions">
+              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> View Certificate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python cert -->
+        <div class="cert-card-new cert-c2 reveal" onclick="openCertModal('python')">
+          <div class="cert-photo">
+
+            <img src="assets/project/python.png" alt="Python Certificate" />
+
+
+          </div>
+          <div class="cert-body-new">
+            <div class="cert-num">02 / Programming</div>
+            <div class="cert-title-new">Python (Problem Solving)</div>
+            <div class="cert-issuer-new">HackerRank</div>
+
+            <div class="cert-actions">
+              <a href="https://www.hackerrank.com/certificates/iframe/d40bff4cca22" target="_blank"
+                rel="noopener noreferrer" class="btn-sm btn-sm-ghost">
+                <i class="fas fa-expand"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Azure cert -->
+        <div class="cert-card-new cert-c3 reveal" onclick="openCertModal('azure')">
+          <div class="cert-photo">
+
+            <img src="assets/project/microsoft.png" alt="Azure Certificate" />
+
+          </div>
+          <div class="cert-body-new">
+            <div class="cert-num">03 / AI & Cloud</div>
+            <div class="cert-title-new">Computer Vision with Azure Cognitive Services</div>
+            <div class="cert-issuer-new">Microsoft · Azure AI</div>
+            <div class="cert-actions">
+              <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> View Certificate</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let's Work<br /><em
+              style="font-family:var(--ff-serif);font-style:italic;font-weight:400;">Together</em></h2>
+          <p style="color:var(--muted);font-size:.95rem;line-height:1.75;margin-bottom:36px;">Whether you have a project
+            idea, an internship opportunity, or just want to connect — my inbox is always open. I respond within 24
+            hours.</p>
+          <a href="mailto:subintamang@email.com" class="contact-card">
+            <div class="contact-card-icon" style="background:rgba(74,240,176,.1)">📧</div>
+            <div>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value">subintamang008@email.com</div>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+          <a href="https://github.com/Subin-hubs" target="_blank" class="contact-card">
+            <div class="contact-card-icon" style="background:rgba(255,255,255,.06)"><i class="fab fa-github"
+                style="color:var(--text);font-size:1.2rem"></i></div>
+            <div>
+              <div class="contact-card-label">GitHub</div>
+              <div class="contact-card-value">@subintamang</div>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/subin-tamang-394179300/" target="_blank" class="contact-card">
+            <div class="contact-card-icon" style="background:rgba(10,102,194,.15)"><i class="fab fa-linkedin-in"
+                style="color:#0a66c2;font-size:1.2rem"></i></div>
+            <div>
+              <div class="contact-card-label">LinkedIn</div>
+              <div class="contact-card-value">Subin Tamang</div>
+            </div>
+            <i class="fas fa-arrow-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+        </div>
+        <div class="reveal">
+          <div style="background:var(--surface2);border:1px solid var(--border);border-radius:20px;padding:36px">
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:24px;letter-spacing:-.02em">Send a Message</h3>
+            <div class="contact-form" id="contactForm">
+              <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text"
+                  placeholder="Your name  " id="cf-name" /></div>
+              <div class="form-group"><label class="form-label">Email Address</label><input class="form-input"
+                  type="email" placeholder="your_email@example.com" id="cf-email" /></div>
+              <div class="form-group"><label class="form-label">Subject</label><input class="form-input" type="text"
+                  placeholder="Project collaboration..." id="cf-subject" /></div>
+              <div class="form-group"><label class="form-label">Message</label><textarea class="form-input"
+                  placeholder="Tell me about your project or opportunity..." id="cf-message"></textarea></div>
+              <button class="form-submit" onclick="submitForm()"><i class="fas fa-paper-plane"></i> Send
+                Message</button>
+            </div>
+            <div id="formSuccess" style="display:none;text-align:center;padding:40px 0;color:var(--accent)">
+              <div style="font-size:2.5rem;margin-bottom:12px">✅</div>
+              <div style="font-weight:700;font-size:1.1rem;margin-bottom:6px">Message Sent!</div>
+              <div style="color:var(--muted);font-size:.87rem;margin-bottom:20px">
+                I'll get back to you within 24 hours.
+              </div>
+
+              <button onclick="resetForm()" style="
+                  padding:10px 18px;
+                  border-radius:10px;
+                  border:1px solid var(--border);
+                  background:var(--surface2);
+                  color:var(--text);
+                  cursor:pointer;
+                  font-weight:600;
+                ">
+                Send Another Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">Subin Tamang.</span>
+    <span class="footer-copy">© 2026 · Built with 💚 in 🤖 & HTML</span>
+    <div class="footer-socials">
+      <a href="https://github.com/Subin-hubs" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/subin-tamang-394179300/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.subintamang.com.np/" target="_blank"><i class="fas fa-globe"></i></a>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function submitForm() {
+      const n = document.getElementById('cf-name').value.trim();
+      const em = document.getElementById('cf-email').value.trim();
+      const sub = document.getElementById('cf-subject').value.trim();
+      const m = document.getElementById('cf-message').value.trim();
+
+      const btn = document.querySelector('.form-submit');
+
+      if (!n || !em || !sub || !m) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      btn.innerHTML = "Sending...";
+      btn.disabled = true;
+
+      emailjs.send("service_y4t7prr", "template_e4ks0ok", {
+        from_name: n,
+        from_email: em,
+        subject: sub,
+        message: m
+      })
+        .then((res) => {
+          console.log("SUCCESS:", res);
+
+          document.getElementById('contactForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        })
+        .catch((err) => {
+          console.log("EMAILJS ERROR:", err);
+          alert("Failed to send message");
+        })
+        .finally(() => {
+          btn.innerHTML = "Send Message";
+          btn.disabled = false;
+        });
+    }
+
+    function resetForm() {
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('formSuccess').style.display = 'none';
+
+      document.getElementById('cf-name').value = '';
+      document.getElementById('cf-email').value = '';
+      document.getElementById('cf-subject').value = '';
+      document.getElementById('cf-message').value = '';
+    }
+
+
+    /* PROJECT DATA */
+    const projects = {
+      fb: {
+        image: 'assets/projects/facebook.jpg',
+        bg: 'linear-gradient(135deg,#4af080,#2db860)',
+        title: 'Facebook Clone App',
+        desc: 'A full-featured social media application replicating core Facebook functionality with a Firebase backend. Real-time data sync, user authentication, and a mobile-first UI.',
+        features: [
+          'Email/password & Google OAuth via Firebase Auth',
+          'Real-time posts feed with Firestore listeners',
+          'Like and comment system with live updates',
+          'Real-time one-on-one chat',
+          'User profiles with photo upload & bio',
+          'Friend/follow system'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase Auth', 'Firestore', 'Cloud Storage', 'Provider'],
+        github: 'https://github.com/Subin-hubs',
+        demo: null
+      },
+
+      betzy: {
+        image: 'assets/projects/betyzylogo.jpeg',
+        bg: 'linear-gradient(135deg,#f04a4a,#b03030)',
+        title: 'Betzy',
+        desc: 'A competitive challenge-based mobile app where users go head-to-head in tasks and activities. Built with a Flutter frontend and Firebase backend, ensuring real-time updates and seamless user interaction.',
+        features: [
+          'User vs User challenge system',
+          'Admin approval system for fair gameplay',
+          'Real-time updates using Firebase',
+          'Secure authentication and user management',
+          'Smooth and responsive Flutter UI'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Provider'],
+        github: 'https://github.com/Subin-hubs',
+        demo: null
+      },
+
+      aadan: {
+        image: 'assets/projects/aadanpradanlogo.png',
+        bg: 'linear-gradient(135deg,#4af080,#2db860)',
+        title: 'Aadan Pradan',
+        desc: 'Built entirely in one day as part of a competitive code challenge. A community book donation and exchange platform — from concept to deployment in under 24 hours.',
+        features: [
+          'Add books for donation or exchange',
+          'Browse available books from other users',
+          'Firebase Auth for user management',
+          'Firestore for real-time book listings',
+          'Shipped in a one-day code challenge'
+        ],
+        stack: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'Firebase Auth'],
+        github: 'https://github.com/Subin-hubs',
+        demo: null
+      },
+
+      portfolio: {
+        image: 'assets/projects/portfolio.jpeg',
+        bg: 'linear-gradient(135deg,#4af0b0,#2dc8e8)',
+        title: 'Portfolio Website',
+        desc: 'A personal portfolio with a clean, minimalist design philosophy — smooth scrolling, responsive layout, and professional presentation deployed on Vercel.',
+        features: [
+          'Smooth scroll navigation between sections',
+          'Responsive design for mobile & desktop',
+          'GitHub and LinkedIn deep links',
+          'Deployed on Vercel for fast global CDN',
+          'Project showcase with live demo links'
+        ],
+        stack: ['HTML', 'CSS', 'JavaScript', 'Vercel'],
+        github: 'https://github.com/Subin-hubs',
+        demo: 'https://subintamang.com.np'
+      },
+      sochmoney: {
+        image: 'assets/projects/sochmoney.png',
+        bg: 'linear-gradient(135deg,#2563eb,#10b981)',
+        title: 'SochMoney App',
+        desc: 'A smart spending decision app that helps users think before they buy. It analyzes purchases based on income, savings, and time-to-earn value to build better financial habits.',
+
+        features: [
+          'Smart purchase analysis (Buy / Think / Avoid decisions)',
+          'Time-to-earn calculation for every expense',
+          'Savings tracking with monthly insights',
+          'Offline-first data storage using Hive',
+          'Clean and responsive UI with dark mode support',
+          'Saved transactions with swipe-to-delete feature'
+        ],
+
+        stack: [
+          'Flutter',
+          'Dart',
+          'Riverpod',
+          'Hive',
+          'GoRouter',
+          'Local Notifications'
+        ],
+
+        github: 'https://github.com/Subin-hubs',
+        demo: '#'
+      },
+      agrova: {
+        image: 'assets/projects/aggrova.png',
+        bg: 'linear-gradient(135deg,#16a34a,#22c55e)',
+        title: 'AGROVA',
+        desc: 'An AI-powered agriculture app that helps farmers identify potential crop diseases by analyzing crop images and providing disease information, severity, recommendations, and prevention measures.',
+
+        features: [
+          'AI-powered crop disease detection from images',
+          'Disease condition and confidence analysis',
+          'Severity assessment for detected crop conditions',
+          'Treatment and management recommendations',
+          'Disease prevention tips for farmers',
+          'Simple and accessible mobile interface'
+        ],
+
+        stack: [
+          'Flutter',
+          'Dart',
+          'FastAPI',
+          'Python',
+          'Google Gemini AI',
+          'Firebase',
+          'REST API'
+        ],
+
+        github: 'https://github.com/Subin-hubs',
+        demo: '#'
+      }
+    };
+
+    /* CERT DATA */
+    const certs = {
+      flutter: {
+        imageSrc: "assets/project/Br.jpeg",
+        emoji: '🎯', bg: 'linear-gradient(135deg,#0468d7,#02a9f4)',
+        title: 'Flutter Development Certificate', issuer: 'Broadway Infosys · Kathmandu, Nepal', issued: '2023',
+        desc: 'Completed an intensive Flutter development training covering widget architecture, state management, Firebase integration, and cross-platform UI design. Hands-on projects validated core mobile development skills.',
+        Certification_number: 'B94791000',
+        skills: ['Flutter', 'Dart', 'Firebase Integration', 'State Management', 'Widget Architecture', 'UI/UX Design'],
+        verifyUrl: 'https://broadwayinfosys.com/certificate-verification-response ',
+        viewUrl: 'https://broadwayinfosys.com/certificate-verification-code/eyJpdiI6IlNMOURpbmdVcWxzK1lRdFBqbzFiSUE9PSIsInZhbHVlIjoiSDQ1L2J6NXkwR0RvY0JCd2gyNHQ5dz09IiwibWFjIjoiY2M5OTUwOGRkMjZiYTZkM2RlMjFjOTlhOWVkYmYyZDc4Njc4OWI0ZTkyYTUzZWFlNThlMGY5YjYzMmJiYjg5YSIsInRhZyI6IiJ9'
+      },
+      python: {
+        imageSrc: "assets/project/python.png",
+        emoji: '🐍', bg: 'linear-gradient(135deg,#3776ab,#ffd343)',
+        title: 'Python (Problem Solving) Certificate', issuer: 'HackerRank', issued: '2023',
+        desc: 'Earned the HackerRank Python certification by demonstrating proficiency in core Python programming concepts, data structures, algorithms, and problem-solving techniques under timed conditions.',
+        skills: ['Python 3', 'Data Structures', 'Algorithms', 'Problem Solving', 'OOP Fundamentals'],
+        verifyUrl: 'https://www.hackerrank.com/certificates/d40bff4cca22',
+        viewUrl: 'https://www.hackerrank.com/certificates/iframe/d40bff4cca22'
+      },
+      azure: {
+        imageSrc: "assets/project/microsoft.png",
+        emoji: '☁️', bg: 'linear-gradient(135deg,#0078d4,#50b4ff)',
+        title: 'Computer Vision with Azure Cognitive Services', issuer: 'Microsoft · Azure AI', issued: '2024',
+        desc: 'Microsoft-certified training in computer vision using Azure Cognitive Services. Covered image analysis, object detection, OCR, and integrating Azure Vision APIs into real applications.',
+        skills: ['Azure Cognitive Services', 'Computer Vision API', 'Image Analysis', 'OCR', 'Azure SDK', 'REST API Integration'],
+        verifyUrl: 'https://coursera.org/verify/R9EBX3YY2DCA',
+        viewUrl: 'https://coursera.org/verify/R9EBX3YY2DCA'
+      },
+      githubBootcamp: {
+        imageSrc: "assets/project/Github.png",
+        emoji: '🐙', bg: 'linear-gradient(135deg,#333333,#000000)',
+        title: 'GitHub Bootcamp',
+        issuer: 'Texas College of Management & IT',
+        issued: '2026',
+        desc: 'GitHub Bootcamp — Completed a hands-on GitHub Bootcamp organized by my college, gaining practical experience with Git, GitHub repositories, version control, branching, commits, and collaborative development.',
+        skills: ['Git', 'GitHub', 'Version Control'],
+        verifyUrl: 'https://tcmitlearn.com/Login.aspx',
+        viewUrl: 'https://tcmitlearn.com/CertificateView.aspx?cid=ZJnXtKObLLICVkazIuaHEw'
+      }
+    };
+
+    /* OPEN PROJECT MODAL */
+    function openProjectModal(key) {
+      const p = projects[key];
+      document.getElementById('modalThumb').style.background = p.bg;
+      if (p.imageSrc || p.image) {
+        const img = p.imageSrc || p.image;
+        document.getElementById('modalThumb').innerHTML =
+          document.getElementById('modalThumb').innerHTML = `
+  <img src="${img}" 
+       style="display:block;width:100%;height:100%;object-fit:cover;" />
+`;
+      } else {
+        document.getElementById('modalThumb').innerHTML =
+          `<span style="font-size:6rem">📦</span>`;
+      }
+      const feats = p.features.map(f => `<li>${f}</li>`).join('');
+      const stack = p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('');
+      const demo = p.demo ? `<a href="${p.demo}" target="_blank" class="btn-sm btn-sm-accent"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : '';
+      document.getElementById('modalContent').innerHTML = `
+    <div class="modal-title">${p.title}</div>
+    <p class="modal-desc">${p.desc}</p>
+    <div class="modal-features-title">Key Features</div>
+    <ul class="modal-features">${feats}</ul>
+    <div class="modal-features-title" style="margin-top:4px">Tech Stack</div>
+    <div class="modal-stack">${stack}</div>
+    <div class="modal-actions">${demo}<a href="${p.github}" target="_blank" class="btn-sm btn-sm-ghost"><i class="fab fa-github"></i> GitHub</a></div>`;
+      showModal();
+    }
+
+    /* OPEN CERT MODAL */
+    function openCertModal(key) {
+      const c = certs[key];
+      const thumb = document.getElementById('modalThumb');
+      if (c.imageSrc) {
+        thumb.style.background = '#0b0c0f';
+        thumb.innerHTML = `<img src="${c.imageSrc}" alt="${c.title}" />`;
+      } else {
+        thumb.style.background = c.bg;
+        thumb.innerHTML = `
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;width:100%;padding:20px;text-align:center">
+        <span style="font-size:5rem">${c.emoji}</span>
+        <div style="font-size:.65rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;font-family:var(--ff-mono);line-height:1.6">Add your certificate<br/>image to see it here</div>
+      </div>`;
+      }
+      const skills = c.skills.map(s => `<span class="stack-tag">${s}</span>`).join('');
+      document.getElementById('modalContent').innerHTML = `
+    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(74,240,176,.1);border:1px solid rgba(74,240,176,.3);padding:4px 12px;border-radius:100px;font-size:.72rem;font-weight:600;color:var(--accent);letter-spacing:.07em;text-transform:uppercase">
+      <i class="fas fa-check-circle"></i> Verified Credential
+    </div>
+    <div class="modal-title">${c.title}</div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap">
+      <div><div class="modal-features-title">Issued By</div><div style="font-size:.9rem;font-weight:600;margin-top:4px">${c.issuer}</div></div>
+      <div><div class="modal-features-title">Year</div><div style="font-size:.9rem;font-weight:600;margin-top:4px">${c.issued}</div></div>
+    </div>
+    <p class="modal-desc">${c.desc}</p>
+    <div class="modal-features-title">Skills Covered</div>
+    <div class="modal-stack">${skills}</div>
+    <div class="modal-actions">
+      <a href="${c.verifyUrl}" target="_blank" class="verify-btn"><i class="fas fa-shield-alt"></i> Verify Certificate</a>
+      <a href="${c.viewUrl}" target="_blank" class="btn-sm btn-sm-ghost"><i class="fas fa-external-link-alt"></i> View Online</a>
+    </div>`;
+      showModal();
+    }
+
+    function showModal() { document.getElementById('modal').classList.add('open'); document.body.style.overflow = 'hidden' }
+    function closeModal() {
+      document.getElementById('modal').classList.remove('open');
+      // Only restore body overflow if the list modal is NOT open
+      if (!document.getElementById('listModal').classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+    function closeModalOuter(e) { if (e.target === document.getElementById('modal')) closeModal() }
+
+    function showListModal() { document.getElementById('listModal').classList.add('open'); document.body.style.overflow = 'hidden' }
+    function closeListModal() {
+      document.getElementById('listModal').classList.remove('open');
+      // Only restore body overflow if the detail modal is NOT open
+      if (!document.getElementById('modal').classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+    function closeListModalOuter(e) { if (e.target === document.getElementById('listModal')) closeListModal() }
+
+    function openAllProjectsModal() {
+      document.getElementById('listModalHeader').innerText = "All Projects";
+      let content = '<div class="projects-grid">';
+      let i = 1;
+      for (const key in projects) {
+        const p = projects[key];
+        const img = p.imageSrc || p.image;
+        const bg = p.bg || 'var(--surface2)';
+        const indexStr = i < 10 ? '0' + i : i;
+
+        let actions = '';
+        if (p.demo) {
+          actions += `<a href="${p.demo}" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> Live</a>`;
+        } else {
+          actions += `<a href="${p.github}" target="_blank" class="btn-sm btn-sm-accent" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>`;
+        }
+        actions += `<span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> Details</span>`;
+
+        content += `
+          <div class="project-card p${(i % 4) + 1}" onclick="openProjectModal('${key}')">
+            <div class="project-thumb" style="background: ${bg};">
+              ${img ? `<img src="${img}" alt="${p.title}" style="width:100%; height:100%; object-fit:cover;">` : `<span style="font-size:3rem">📦</span>`}
+            </div>
+            <div class="project-body">
+              <div class="project-num">${indexStr} / Project</div>
+              <div class="project-title">${p.title}</div>
+              <div class="project-desc">${p.desc.substring(0, 100)}...</div>
+              <div class="project-stack">
+                ${p.stack.slice(0, 3).map(s => `<span class="stack-tag">${s}</span>`).join('')}
+              </div>
+              <div class="project-actions">
+                ${actions}
+              </div>
+            </div>
+          </div>
+        `;
+        i++;
+      }
+      content += '</div>';
+      document.getElementById('listModalContent').innerHTML = content;
+      showListModal();
+    }
+
+    function openAllCertificatesModal() {
+      document.getElementById('listModalHeader').innerText = "All Certificates";
+      let content = '<div class="cert-cards-grid">';
+      let i = 1;
+      for (const key in certs) {
+        const c = certs[key];
+        const indexStr = i < 10 ? '0' + i : i;
+        const bg = c.bg || 'var(--surface2)';
+        const img = c.imageSrc;
+
+        content += `
+          <div class="cert-card-new cert-c${(i % 3) + 1}" onclick="openCertModal('${key}')">
+            <div class="cert-photo" style="${!img ? `background: ${bg};` : ''}">
+              ${img ? `<img src="${img}" alt="${c.title}" />` : `<div class="cert-emoji">${c.emoji}</div>`}
+            </div>
+            <div class="cert-body-new">
+              <div class="cert-num">${indexStr} / Credential</div>
+              <div class="cert-title-new">${c.title}</div>
+              <div class="cert-issuer-new">${c.issuer}</div>
+              <div class="cert-actions">
+                <span class="btn-sm btn-sm-ghost"><i class="fas fa-expand"></i> View Details</span>
+              </div>
+            </div>
+          </div>
+        `;
+        i++;
+      }
+      content += '</div>';
+      document.getElementById('listModalContent').innerHTML = content;
+      showListModal();
+    }
+
+    /* REVEAL */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); io.unobserve(e.target) } });
+    }, { threshold: .1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    /* NAVBAR - scrolled and hide-on-scroll (hide when scrolling down, show when scrolling up) */
+    (function () {
+      const nav = document.getElementById('navbar');
+      if (!nav) return;
+      let lastY = window.scrollY;
+      let ticking = false;
+
+      function onScroll() {
+        const current = window.scrollY;
+
+        if (current > lastY && current > 100) {
+          // scrolling down
+          nav.classList.add('nav-hidden');
+        } else {
+          // scrolling up or near top
+          nav.classList.remove('nav-hidden');
+        }
+
+        // maintain scrolled appearance when past threshold
+        nav.classList.toggle('scrolled', current > 40);
+
+        lastY = current <= 0 ? 0 : current;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    /* MOBILE NAV */
+    function toggleNav() {
+      const links = document.getElementById('navLinks');
+      const ham = document.getElementById('hamburger');
+      if (links) links.classList.toggle('open');
+      if (ham) ham.classList.toggle('open');
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (document.getElementById('modal').classList.contains('open')) {
+          closeModal();
+        } else if (document.getElementById('listModal').classList.contains('open')) {
+          closeListModal();
+        }
+      }
+    });
+  </script>
+
+  <script>
+    // Root theme toggle: toggles a `theme-light` class on body and persists choice
+    (function () {
+      const btn = document.getElementById('themeToggleRoot');
+      if (!btn) return;
+      const apply = (isLight) => {
+        document.body.classList.toggle('theme-light', !!isLight);
+        document.body.classList.toggle('theme-dark', !isLight);
+        btn.setAttribute('aria-pressed', (!!isLight).toString());
+        btn.innerHTML = isLight ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+        try { localStorage.setItem('site-theme', '' + (isLight ? 'light' : 'dark')); } catch (e) { }
+        // ensure nav updates visually in older browsers by toggling inline CSS fallback
+        const nav = document.getElementById('navbar');
+        if (nav) nav.style.background = isLight ? '' : '';
+      };
+
+      // initialize from localStorage or system preference
+      try {
+        const saved = localStorage.getItem('site-theme');
+        if (saved) apply(saved === 'light');
+        else apply(window.matchMedia && window.matchMedia('(prefers-color-scheme:light)').matches);
+      } catch (e) { apply(false) }
+
+      btn.addEventListener('click', () => { const isLight = !document.body.classList.contains('theme-light'); apply(isLight); });
+    })();
+  </script>
+</body>
+
+</html>
