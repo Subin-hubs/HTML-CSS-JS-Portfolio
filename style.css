@@ -1224,6 +1224,8 @@ section {
 
 .modal-features {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 8px
@@ -2061,7 +2063,7 @@ body.theme-light .phone {
 }
 
 .p6 .project-thumb {
-    background: linear-gradient(135deg, #7c7cfa, var(--accent2))
+    background: radial-gradient(circle at 50% 40%, #d4501f, #9e3010)
 }
 
 .p7 .project-thumb {
@@ -2083,35 +2085,6 @@ body.theme-light .phone {
     color: rgba(255, 255, 255, .92);
     text-shadow: 0 10px 40px rgba(0, 0, 0, .25);
     line-height: 1
-}
-
-.wip-badge {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 100px;
-    background: rgba(11, 12, 15, .55);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, .18);
-    color: #fff;
-    font-family: var(--font-mono);
-    font-size: .68rem;
-    font-weight: 500;
-    letter-spacing: .06em;
-    text-transform: uppercase
-}
-
-.wip-badge .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #fbbf24;
-    animation: pulse 1.8s ease infinite
 }
 
 body.theme-light .project-card:hover,
@@ -2207,5 +2180,61 @@ body.theme-light .cert-card-new:hover {
 
     .phone-light {
         margin-top: 30px
+    }
+}
+
+/* =========================================================
+   MORE PROJECTS — equal-height cards
+   ========================================================= */
+.projects-grid {
+    align-items: stretch
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column
+}
+
+.project-thumb {
+    flex-shrink: 0
+}
+
+.project-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+/* tags + buttons sit at the bottom so buttons line up across a row */
+.project-bottom {
+    margin-top: auto
+}
+
+/* square app icon shown whole inside a thumbnail */
+.project-thumb img.thumb-icon,
+.thumb-icon {
+    width: auto;
+    height: 64%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 22%;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, .3)
+}
+
+#modalThumb img.thumb-icon-lg {
+    width: 52%;
+    height: auto;
+    max-height: none;
+    border-radius: 22%
+}
+
+/* desktop/tablet grids: clamp long descriptions to 4 lines (full text in Details) */
+@media (min-width:901px) {
+    .project-desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden
     }
 }
